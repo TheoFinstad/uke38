@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('hogwarts-background.jpg'); /* Bakgrunnsbilde av Hogwarts */
+    background-size: cover; /* Fyller hele skjermen */
+    background-position: center; /* Midtstiller bakgrunnen */
+    background-attachment: fixed; /* Bakgrunnen ruller ikke med innholdet */
+    height: 100vh; /* Full høyde av viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Sørger for at teksten er midtstilt */
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Lett transparent hvit bakgrunn for å lese innholdet bedre */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Legger til skygge for å få innholdet til å stå ut fra bakgrunnen */
+    width: 80%; /* Gjør containeren responsiv */
+    max-width: 1200px; /* Begrens containerens maksbredde */
+    margin: auto; /* Sørger for at innholdet blir midtstilt i bredden */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4b0082; /* Mørk lilla tekstfarge */
+    font-size: 2.5em;
+}
+
+#characterInput {
+    width: 80%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+#characterInput:focus {
+    border-color: #4b0082; /* Samme farge som tittelen */
+}
+
+.character-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Sentrerer kortene */
+    gap: 20px;
+}
+
+.character-info {
+    background-color: rgba(255, 255, 255, 0.9); /* Gjør karakterkortet litt transparent */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Legger til en liten skygge på kortene */
+}
+
+.character-info img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.character-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.character-info p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
